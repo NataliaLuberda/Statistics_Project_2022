@@ -1,0 +1,224 @@
+> data <- read.csv("C:\\Users\\zilla\\Downloads\\archive (2)\\ScreenTimeData.csv")
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_boxplot() +
++   ggtitle("Distribution of Screen Time by Day of Week")
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time, fill = factor(Week.Day))) +
++   geom_boxplot() +
++   scale_fill_manual(values = c("fuchsia","purple")) +
++   ggtitle("Distribution of Screen Time by Day of Week")
+Error in `palette()`:
+! Insufficient values in manual scale. 7 needed but only 2 provided.
+Run `rlang::last_error()` to see where the error occurred.
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time, fill = factor(Week.Day))) +
++   geom_boxplot() +
++   scale_fill_manual(values = c("fuchsia","purple")) +
++   ggtitle("Distribution of Screen Time by Day of Week")
+Error in `palette()`:
+! Insufficient values in manual scale. 7 needed but only 2 provided.
+Run `rlang::last_error()` to see where the error occurred.
+> 
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_boxplot() +
++   scale_fill_brewer(type = "qual", palette = "Dark2") +
++   ggtitle("Distribution of Screen Time by Day of Week")
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_boxplot() +
++   scale_fill_manual(values = c("purple","pink","blue","green","yellow","orange","red")) +
++   ggtitle("Distribution of Screen Time by Day of Week")
+> library(packageName)
+Błąd w poleceniu 'library(packageName)':nie ma pakietu o nazwie ‘packageName’
+> 
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time, fill = factor(Week.Day))) +
++   geom_boxplot() +
++   scale_fill_manual(values = c("purple","pink","blue","green","yellow","orange","red")) +
++   ggtitle("Distribution of Screen Time by Day of Week")
+> 
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time, fill = factor(Week.Day))) +
++   geom_boxplot() +
++   scale_fill_manual(values = c("purple","pink","blue","green","yellow","orange","red")) +
++   ggtitle("Distribution of Screen Time by Day of Week")
+> 
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time, fill = factor(Week.Day))) +
++   geom_boxplot() +
++   scale_fill_manual(values = c("purple","pink","blue","green","yellow","orange","red")) +
++   ggtitle("Distribution of Screen Time by Day of Week")
+> 
+> Violin plot to wariacja boxplotu, która pokazuje gęstość prawdopodobieństwa danych w różnych wartościach. Możesz stworzyć violin plot w R za pomocą pakietu ggplot2 i funkcji geom_violin().
+BŁĄD: nieoczekiwany symbol w "Violin plot"
+> Oto przykład kodu, który tworzy violin plot dla zmiennej "Total.Screen.Time" podzielonego na "Week.Day":
+BŁĄD: nieoczekiwany symbol w "Oto przykład"
+> 
+> Copy code
+BŁĄD: nieoczekiwany symbol w "Copy code"
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_violin() +
++   ggtitle("Violin plot of Screen Time by Day of Week")
+> save.image("C:\\Users\\zilla\\OneDrive\\Pulpit\\ProjektStatystyka\\.RData")
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_violin() +
++   ggtitle("Violin plot of Screen Time by Day of Week")
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_violin(fill = "purple", color = "purple") +
++   theme_classic() +
++   ggtitle("Violin plot of Screen Time by Day of Week") +
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"),
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"),
++         axis.title = element_text(size = 14, face = "bold", color = "purple"),
++         plot.title = element_text(size = 16, face = "bold", color = "purple"))
+> lilac_pink <- rgb(238, 130, 238, maxColorValue = 255)
+> The color "lilac-pink" or "lilac-rose" can be created by combining shades of purple and pink. In RGB color model, it can be represented by a combination of Red, Green and Blue color channels.
+BŁĄD: nieoczekiwany symbol w "The color"
+> You can use the following code to create a lilac-pink color in R:
+BŁĄD: nieoczekiwany symbol w "You can"
+> 
+> Copy code
+BŁĄD: nieoczekiwany symbol w "Copy code"
+> lilac_pink <- rgb(238, 130, 238, maxColorValue = 255)
+> or you can use the HEX code for the color #EE82EE
+BŁĄD: nieoczekiwany symbol w "or you"
+> 
+> Copy code
+BŁĄD: nieoczekiwany symbol w "Copy code"
+> lilac_pink <- "#EE82EE"
+> You can use this color for your plot by adding it to the scale_fill_manual() or scale_color_manual() function.
+BŁĄD: nieoczekiwany symbol w "You can"
+> 
+> Copy code
+BŁĄD: nieoczekiwany symbol w "Copy code"
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_violin(fill = lilac_pink, color = lilac_pink) +
++   theme_classic() +
++   ggtitle("Violin plot of Screen Time by Day of Week") +
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = lilac_pink),
++         axis.text.y = element_text(size = 12, face = "bold", color = lilac_pink),
++         axis.title = element_text(size = 14, face = "bold", color = lilac_pink),
++         plot.title = element_text(size = 16, face = "bold", color = lilac_pink)) +
++   xlab("Day of Week") +
++   ylab("Total Screen Time")
+> ggplot(data, aes(x = factor(Yoga), y = Total.Screen.Time, fill = Yoga)) +
++   geom_violin(color = "purple") +
++   theme_classic() +
++   ggtitle("Violin plot of Screen Time by Yoga practice") +
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"),
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"),
++         axis.title = element_text(size = 14, face = "bold", color = "purple"),
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) +
++   xlab("Yoga practice") +
++   ylab("Total Screen Time")
+> ggplot(data, aes(x = factor(Yoga), y = Total.Screen.Time, fill = Yoga)) + 
++   geom_boxplot(color = "purple") + 
++   theme_classic() + 
++   ggtitle("Boxplot of Screen Time by Yoga practice") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Yoga practice") + 
++   ylab("Total Screen Time")
+> ggplot(data, aes(x = factor(day_of_week), y = Total.Screen.Time, fill = day_of_week)) + 
++   geom_boxplot(color = "purple") + 
++   theme_classic() + 
++   ggtitle("Boxplot of Screen Time by Day of Week") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Day of Week") + 
++   ylab("Total Screen Time")
+Error in `geom_boxplot()`:
+! Problem while computing aesthetics.
+ℹ Error occurred in the 1st layer.
+Caused by error in `factor()`:
+! nie znaleziono obiektu 'day_of_week'
+Run `rlang::last_error()` to see where the error occurred.
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time, fill = Week.Day)) + 
++   geom_boxplot(color = "purple") + 
++   theme_classic() + 
++   ggtitle("Boxplot of Screen Time by Day of Week") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Day of Week") + 
++   ylab("Total Screen Time")
+> ggplot(data, aes(x = Total.Screen.Time)) + 
++   geom_histogram(color = "purple", fill = "purple", binwidth = 1) + 
++   theme_classic() + 
++   ggtitle("Histogram of Total Screen Time") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Total Screen Time") + 
++   ylab("Frequency")
+> ggplot(data, aes(x = Total.Screen.Time, fill = factor(Yoga))) + 
++   geom_histogram(color = "purple", binwidth = 1) + 
++   theme_classic() + 
++   ggtitle("Histogram of Total Screen Time by Yoga Practice") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Total Screen Time") + 
++   ylab("Frequency") + 
++   scale_fill_manual(values = c("purple","pink")) +
++   guides(fill=guide_legend(title="Yoga Practice"))
+> ggplot(data, aes(x = Total.Screen.Time, fill = factor(Yoga))) + 
++   geom_histogram(color = "purple", binwidth = 1) + 
++   theme_classic() + 
++   ggtitle("Histogram of Total Screen Time by Yoga Practice") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Total Screen Time") + 
++   ylab("Frequency") + 
++   guides(fill=guide_legend(title="Yoga Practice"))
+> ggplot(data, aes(x = Total.Screen.Time, fill = factor(Week.Day))) + 
++   geom_histogram(color = "purple", binwidth = 1) + 
++   theme_classic() + 
++   ggtitle("Histogram of Total Screen Time by Yoga Practice") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Total Screen Time") + 
++   ylab("Frequency") + 
++ 
++ 
++ ggplot(data, aes(x = Total.Screen.Time, fill = factor(Week.Day))) + 
++   geom_histogram(color = "purple", binwidth = 1) + 
++   theme_classic() + 
++   ggtitle("Histogram of Total Screen Time by Day of Week") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Total Screen Time") + 
++   ylab("Frequency") + 
++   guides(fill=guide_legend(title="Week Day"))
+Error in `ggplot_add()`:
+! Can't add `ggplot(data, aes(x = Total.Screen.Time, fill = factor(Week.Day)))` to a <ggplot> object.
+Run `rlang::last_error()` to see where the error occurred.
+> ggplot(data, aes(x = Total.Screen.Time, fill = factor(Week.Day))) + 
++   geom_histogram(color = "purple", binwidth = 1) + 
++   theme_classic() + 
++   ggtitle("Histogram of Total Screen Time by Day of Week") + 
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.text.y = element_text(size = 12, face = "bold", color = "purple"), 
++         axis.title = element_text(size = 14, face = "bold", color = "purple"), 
++         plot.title = element_text(size = 16, face = "bold", color = "purple")) + 
++   xlab("Total Screen Time") + 
++   ylab("Frequency") + 
++   guides(fill=guide_legend(title="Week Day"))
+> ggplot(data, aes(x = factor(Week.Day), y = Total.Screen.Time)) +
++   geom_violin(color = "purple") +
++   theme_classic() +
++   ggtitle("Violin plot of Screen Time by Day of Week") +
++   theme(axis.text.x = element_text(size = 12, face = "bold", color = lilac_pink),
++         axis.text.y = element_text(size = 12, face = "bold", color = lilac_pink),
++         axis.title = element_text(size = 14, face = "bold", color = lilac_pink),
++         plot.title = element_text(size = 16, face = "bold", color = lilac_pink)) +
++   xlab("Day of Week") +
++   ylab("Total Screen Time")
+> 
